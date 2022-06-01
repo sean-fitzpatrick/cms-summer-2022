@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pretext>
+  <!-- <docinfo>
+    <macros>
+
+    </macros>
+  </docinfo> -->
+  <slideshow>
+    <title>Supporting applied content with open education technologies</title>
+    <subtitle>Authentic Applications, CMS Summer 2022</subtitle>
+    <frontmatter>
+      <titlepage>
+        <author>
+          <personname>Sean Fitzpatrick</personname>
+          <affiliation>University of Lethbridge</affiliation>
+          <logo><image source="fiatlux.jpg"/></logo>
+        </author>
+
+        <date>June 6th, 2022</date>
+      </titlepage>
+    </frontmatter>
+
+    <section>
+      <title>How it started</title>
+
+
+      <slide>
+        <title>Calculus</title>
+        <p>
+          Our calculus sequence is pretty traditional:
+          <ul>
+            <li>
+              <p>
+                Calc 1 covers limits, derivatives, graphs, <q>applications</q>, and integration.
+              </p>
+            </li>
+            <li>
+              <p>
+                Calc 2 covers techiques of integration, <q>applications</q> of integration, differential equations, and curves.
+              </p>
+            </li>
+            <li>
+              <p>
+                And so on.
+              </p>
+            </li>
+          </ul>
+        </p>
+      </slide>
+
+      <slide>
+        <title>Applications?</title>
+
+        <p>
+          Officially, there are applications, but they are not <em>authentic</em>.
+        </p>
+
+        <p>
+          We have the usual related rates, optimization, and polynomial approximation.
+        </p>
+
+        <p>
+          Calculations are usually done by hand, or with a <q>basic</q> calculator.
+        </p>
+      </slide>
+
+      <slide>
+        <title>Linear algebra</title>
+        <p>
+          We have two courses in linear algebra.
+        </p>
+
+        <p>
+          1st: systems, matrices, vectors, determinants, and eigenvalues.
+          It's intended for first year students, most of whom will not continue in math.
+        </p>
+
+        <p>
+          2nd: abstract vector spaces, linear maps, orthogonality, <etc/>
+        </p>
+
+        <p>
+          Examples and exercises tend to be (dimensionally) small,
+          because they have to be computable (by hand).
+        </p>
+
+        <p>
+          Or do they?
+        </p>
+      </slide>
+    </section>
+
+    <section>
+      <title>The Toolkit</title>
+      <slide>
+        <title>Introduction</title>
+        <p>
+          What are some of the computational tools I've introduced?
+        </p>
+        <p>
+          <ol>
+            <li>
+              <p>
+                <url href="https://uleth.syzygy.ca" visual="uleth.syzygy.ca">Syzygy</url>,
+                a Jupyter hub service provided by <url href="https://www.pims.math.ca/scientific/syzygy" visual="www.pims.math.ca">PIMS</url>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                The <url href="https://sagecell.sagemath.org/" visual="sagecell.sagemath.org">SageMathCell</url>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <url href="https://opentext.uleth.ca/Math3410/" visual="opentext.uleth.ca/Math3410">Textbooks</url>
+                written in <url href="https://pretextbook.org" visual="pretextbook.org"><pretext /></url>
+              </p>
+            </li>
+          </ol>
+        </p>
+
+        <p>
+          Coming soon: <url href="https://runestone.academy/" visual="runestone.academy">Runestone</url>.
+        </p>
+      </slide>
+
+      <slide>
+        <title>Python</title>
+        <p>
+          Access to Syzygy made Python a natural choice.
+        </p>
+
+        <p>
+          The <c>sympy</c> provides symbolic manipulation tools,
+          with relatively simple syntax, and nice output.
+        </p>
+
+        <p>
+          <c>numpy</c> and <c>scipy</c> step in for anything <c>sympy</c> can't handle.
+        </p>
+
+        <p>
+          The <url href="https://github.com/patrickwalls/mathematical-python" visual="github.com/patrickwalls/mathematical-python">resources</url>
+          maintained by Patrick Walls are a godsend.
+        </p>
+      </slide>
+
+      <slide>
+        <title>SymPy Example</title>
+        <p>
+          Here is a sample of some Python code, for diagonalizing a complex matrix.
+        </p>
+
+        <p>
+          <cd>
+            <cline>from sympy import Matrix, init_printing, simplify</cline>
+            <cline>init_printing()</cline>
+            <cline>A = Matrix(2,2,[4,3-I,3+I,1])</cline>
+            <cline>L = A.eigenvects()</cline>
+            <cline>v = ((L[0])[2])[0]</cline>
+            <cline>w = ((L[1])[2])[0]</cline>
+            <cline>u1 = (1/v.norm())*v</cline>
+            <cline>u2 = (1/w.norm())*w</cline>
+            <cline>U = u1.row_join(u2)</cline>
+            <cline>u1, u2, U, simplify(U.H*A*U)</cline>
+          </cd>
+        </p>
+
+        <p>
+          Of course, you could replace everything below the third line with <c>A.diagonalize()</c>.
+        </p>
+      </slide>
+
+      <slide>
+        <title>SageMathCell</title>
+        <p>
+          Here is that same example, but this time, in a Sage cell.
+        </p>
+
+        <sage>
+          <input>
+            from sympy import Matrix, init_printing, simplify
+            init_printing()
+            A = Matrix(2,2,[4,3-I,3+I,1])
+            L = A.eigenvects()
+            v = ((L[0])[2])[0]
+            w = ((L[1])[2])[0]
+            u1 = (1/v.norm())*v
+            u2 = (1/w.norm())*w
+            U = u1.row_join(u2)
+            u1, u2, U, simplify(U.H*A*U)
+          </input>
+        </sage>
+
+        <p>
+          We make frequent use of the <url href="https://sagecell.sagemath.org/" visual="sagecell.sagemath.org">SageMathCell</url> website,
+          including for final exams.
+        </p>
+      </slide>
+
+      <slide>
+        <title>Jupyter</title>
+
+        <p>
+          
+        </p>
+      </slide>
+    </section>
+  </slideshow>
+</pretext>

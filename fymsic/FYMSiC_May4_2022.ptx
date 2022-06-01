@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pretext>
+  <!-- <docinfo>
+    <macros>
+
+    </macros>
+  </docinfo> -->
+  <slideshow>
+    <title>What's New in <pretext />?</title>
+    <subtitle>FYMSiC online conference</subtitle>
+    <frontmatter>
+      <titlepage>
+        <author>
+          <personname>Sean Fitzpatrick</personname>
+          <affiliation>University of Lethbridge</affiliation>
+          <logo><image source="fiatlux.jpg"/></logo>
+        </author>
+
+        <date>May 4th, 2022</date>
+      </titlepage>
+    </frontmatter>
+
+    <section>
+      <title>What <em>is</em> <pretext />?</title>
+
+
+      <slide>
+        <title>The basics</title>
+        <p>
+          <pretext /> is an <init>XML</init> vocabulary for authoring scholarly works,
+          along processing tools.
+        </p>
+
+        <p>
+          Currently supported formats include:
+          <ol>
+            <li>
+              <p>
+                <init>HTML</init> (fully supported)
+              </p>
+            </li>
+            <li>
+              <p>
+                <init>PDF</init>, via <latex /> (fully supported)
+              </p>
+            </li>
+            <li>
+              <p>
+                <init>EPUB</init> (supported, with some effort)
+              </p>
+            </li>
+            <li>
+              <p>
+                Jupyter (works, with quirks)
+              </p>
+            </li>
+            <li>
+              <p>
+                Braille (supported, I think <mdash/> haven't tried it)
+              </p>
+            </li>
+            <li>
+              <p>
+                Runestone
+              </p>
+            </li>
+            <li>
+              <p>
+                Slides (like these ones!)
+              </p>
+            </li>
+          </ol>
+        </p>
+      </slide>
+
+      <slide>
+        <title>Processing</title>
+        <p>
+          Processing of the <init>XML</init> source uses <init>XSLT</init> style sheet transforms.
+        </p>
+
+        <p>
+          Traditionally, this involved the use of a program called <c>xsltproc</c>,
+          along with a number of auxilliary programs to handle images and other components.
+        </p>
+
+        <p>
+          OK if you use Linux, but intimidating to the new user.
+          Commands could get complicated.
+          Most people relied on Bash scripts or makefiles.
+        </p>
+
+        <p>
+          Oh, and getting everything working on Windows was a <alert>nightmare</alert>.
+        </p>
+      </slide>
+
+      <slide>
+        <title>Why use it?</title>
+        <p>
+          The motto: <q>Write once, read anywhere.</q>
+          <ul>
+            <li>
+              <p>
+                Variety of formats makes books more portable and accessible.
+              </p>
+            </li>
+            <li>
+              <p>
+                Speaking of accessibility: the <init>HTML</init> works with screen readers
+                and other accessibility tools.
+              </p>
+            </li>
+            <li>
+              <p>
+                Interactive elements, like video, 3D Asymptote, GeoGebra,
+                Desmos, Sage Cell, and WeBWorK exercises, are all supported.
+              </p>
+            </li>
+            <li>
+              <p>
+                You'll be part of an awesome, supportive community of educators.
+              </p>
+            </li>
+          </ul>
+        </p>
+      </slide>
+
+      <slide>
+        <title>So, what's new?</title>
+        <p>
+          As the user base has grown, so has the need to make things more user-friendly.
+          New tools include:
+          <ul>
+            <li>
+              <p>
+                Authoring tools: syntax highlighting and tag completion
+              </p>
+            </li>
+            <li>
+              <p>
+                Processing tools: the <q><pretext />-CLI</q> (command-line interface),
+                a Python package that automates a lot of the work involved in building your book.
+              </p>
+            </li>
+            <li>
+              <p>
+                Publishing tools: don't have a webserver to host your book?
+                PreTeXt can now automatically publish your book to a <em>GitHub Pages</em> site.
+              </p>
+            </li>
+          </ul>
+        </p>
+      </slide>
+    </section>
+
+    <section>
+      <title>Authoring</title>
+
+      <slide>
+        <title>The <pretext /> language</title>
+        <p>
+          <pretext /> uses <init>XML</init>, which will be new to many authors.
+          If you've used <init>HTML</init> and <latex /> before, the learning curve isn't too steep.
+        </p>
+
+        <p>
+          <ul>
+            <li>
+              <p>
+                <init>XML</init> is used to handle <em>structure</em>: sections,
+                definitions, theorems, examples, <etc />.
+              </p>
+            </li>
+            <li>
+              <p>
+                Anything that happens in a math environment is standard <latex />.
+              </p>
+            </li>
+            <li>
+              <p>
+                Forgotten closing tags become the new forgotten closing brace.
+                (But they're easier to track down!)
+              </p>
+            </li>
+          </ul>
+        </p>
+      </slide>
+
+      <slide>
+        <title>Editor tools</title>
+        <p>
+          Three modern text editors have access to an add-on package that adds support for <pretext />:
+          Sublime Text, Atom, and VSCode.
+        </p>
+
+        <p>
+          <pretext /> support includes syntax highlighting and tag completion.
+          Tag completion means you don't have to remember exactly what all the tags are.
+          Not sure how to format a theorem? Type <c>thm</c>, hit tab, and out comes:
+          <cd>
+            <cline>&lt;theorem xml:id="thm-"&gt;</cline>
+            <cline>  &lt;statement&gt;</cline>
+            <cline>    &lt;p&gt;</cline>
+            <cline></cline>
+            <cline>    &lt;/p&gt;</cline>
+            <cline>  &lt;/statement&gt;</cline>
+            <cline>&lt;/theorem&gt;</cline>
+          </cd>
+        </p>
+      </slide>
+
+      <slide>
+        <title>Support</title>
+        <p>
+          The <url href="https://pretextbook.org/doc/guide/html/guide-toc.html" visual="pretextbook.org/doc/guide/html/"><pretext /> Guide</url>
+          has instructions for all commonly-encountered scenarios.
+        </p>
+
+        <p>
+          When you're stuck, the <url href="https://groups.google.com/forum/#!forum/pretext-support" visual="groups.google.com/forum/#!forum/pretext-support">pretext-support</url>
+          Google group is almost always quick to respond, and helpful.
+        </p>
+
+        <p>
+          You can also follow the #PreTeXtGang on Twitter.
+        </p>
+      </slide>
+    </section>
+
+    <section>
+      <title>Processing</title>
+
+      <slide>
+        <title>Prerequisites</title>
+        <p>
+          To get started, your computer will have to have the following:
+          <ol>
+            <li>
+              <p>
+                A Python installation, at version 3.9 or newer.
+                When installing on Windows, be sure to add it to the PATH.
+              </p>
+            </li>
+            <li>
+              <p>
+                A working <latex /> distribution, if you want to be able to produce PDF.
+              </p>
+            </li>
+            <li>
+              <p>
+                If you have images written using TikZ code,
+                you need a helper application called <c>pdf2svg</c>.
+              </p>
+            </li>
+            <li>
+              <p>
+                Other features might require additional software (like Sage).
+              </p>
+            </li>
+            <li>
+              <p>
+                You'll need a command prompt. On Windows, PowerShell will do,
+                but most people prefer Git Bash.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </slide>
+
+      <slide>
+        <title>Installing <pretext /></title>
+        <p>
+          In a terminal, type:
+          <cd>pip install pretextbook</cd>
+          Now wait about 30 seconds.
+        </p>
+
+        <p>
+          That's it!
+        </p>
+      </slide>
+
+      <slide>
+        <title>Using the <pretext />-CLI</title>
+        <p>
+          There are a few commands you need to build your <pretext /> book.
+          When you're starting out, you should just need the basic commands.
+          As you add more features to your book, you might need to modify things a bit.
+        </p>
+
+        <p>
+          <ul>
+            <li>
+              <p>
+                <c>pretext new book</c>
+              </p>
+              <p>
+                Automatically generate a directory with the expected structure.
+              </p>
+            </li>
+            <li>
+              <p>
+                <c>pretext build html</c>
+              </p>
+              <p>
+                Build the <init>HTML</init> version of your book.
+                (If you have diagrams that need to be built, <c>pretext build html -d</c>.)
+              </p>
+            </li>
+            <li>
+              <p>
+                <c>pretext build pdf</c> or <c>pretext build latex</c>
+              </p>
+              <p>
+                Builds <init>PDF</init> directly, or the <latex /> file if you need it.
+              </p>
+            </li>
+            <li>
+              <p>
+                <c>pretext view html</c>
+              </p>
+
+              <p>
+                Open your <init>HTML</init> textbook on a local webserver.
+              </p>
+            </li>
+          </ul>
+        </p>
+      </slide>
+    </section>
+
+    <section>
+      <title>Publishing</title>
+      <slide>
+        <title>DIY</title>
+        <p>
+          When the only version of our book is <init>PDF</init>,
+          publishing isn't a big deal. Put the file on your <init>LMS</init>,
+          and email a copy to your bookstore for print on demand.
+        </p>
+
+        <p>
+          But now you want to host <init>HTML</init>.
+          If you (or your department) maintains a webserver,
+          and you can add whatever you want, great! Use that.
+        </p>
+
+        <p>
+          If not...
+        </p>
+      </slide>
+
+      <slide>
+        <title>GitHub</title>
+        <p>
+          Additional prerequisites:
+          <ul>
+            <li>
+              <p>
+                A GitHub account
+              </p>
+            </li>
+            <li>
+              <p>
+                Software for using git.
+              </p>
+            </li>
+            <li>
+              <p>
+                An SSH key.
+              </p>
+            </li>
+          </ul>
+        </p>
+
+        <p>
+          If your <pretext /> source is on GitHub, the <pretext />-CLI now has a
+          <c>pretext deploy</c> command.
+        </p>
+
+        <p>
+          This automatically creates a folder with your <init>HTML</init>,
+          and pushes it to GitHub.
+        </p>
+
+        <p>
+          On GitHub, you can select that folder in your <q>GitHub Pages</q> settings,
+          and <em>voilà</em>! Your book is published.
+        </p>
+      </slide>
+
+      <!-- <slide>
+        <title>Walkthrough</title>
+        <p>
+          A walkthrough of the GitHub Pages process was recently posted by Steven Clontz
+          <url href="https://youtube.com/watch?v=iFb5Mh_leq0" visual="youtu.be/iFb5Mh_leq0">on YouTube</url>.
+        </p>
+
+
+        <video youtube="iFb5Mh_leq0"/>
+
+      </slide> -->
+    </section>
+
+    <section>
+      <title><pretext />-adjacent cool things</title>
+
+      <slide>
+        <title>Runestone Academy</title>
+        <p>
+          <url href="https://runestone.academy/" visual="runestone.academy">Runestone Academy</url>
+          is a site for open source, interactive textbooks, primarily for computer science.
+        </p>
+
+        <p>
+          The Runestone Interactive software can be run on a local server,
+          or books can be hosted on the Runestone Academy website.
+        </p>
+      </slide>
+
+      <slide>
+        <title><pretext /> in Runestone</title>
+        <p>
+          There is a <q>publisher option</q> that results in <init>HTML</init> output
+          compatible with Runestone Academy.
+        </p>
+
+        <p>
+          You can choose to have your book hosted there,
+          or on a Runestone server you run yourself.
+        </p>
+
+        <p>
+          Once your book is on Runestone, students can log into it.
+          This allows them to highlight and annotate.
+        </p>
+
+        <p>
+          More importantly, it lets them complete problems <em>in the book</em>
+          and have their progress saved. Scores can be downloaded by the instructor.
+        </p>
+      </slide>
+
+      <slide>
+        <title>Runestone in <pretext /></title>
+        <p>
+          A recent development has freed some of the Runestone interactive elements
+          from the Runestone infrastructure, allowing them to be used in a <pretext /> book.
+        </p>
+
+        <p>
+          This includes interactive exercises such as Parson's problems,
+          and live coding.
+        </p>
+
+        <p>
+          This is still a work in progress. For a sample of current experiments,
+          see the <url href="https://pretextbook.org/examples/runestone/html/frontmatter.html" visual="pretextbook.org/examples/runestone/html/">Sample Runestone Book</url>
+          on the <url href="https://pretextbook.org" visual="pretextbook.org"><pretext /> website</url>.
+        </p>
+      </slide>
+      <slide>
+        <title>CheckIt</title>
+        <p>
+          Steven Clontz has written a web application called
+          <url href="https://checkit.clontz.org/"  visual="checkit.clontz.org">CheckIt</url>.
+        </p>
+
+        <p>
+          CheckIt uses <pretext /> as an element for algorithmically generating homework problems.
+          The app is written with standards-based grading in mind:
+          instructors can quickly and easily generate many versions of an assessment,
+          with each problem tied to a particular <q>standard</q> or learning outcome.
+        </p>
+      </slide>
+    </section>
+  </slideshow>
+</pretext>

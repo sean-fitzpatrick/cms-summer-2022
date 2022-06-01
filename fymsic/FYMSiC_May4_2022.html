@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2022-05-04T11:39:45-06:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>What's New in PreTeXt?</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/reset.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/reveal.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/theme/night.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/reveal.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/plugin/math/math.js"></script><style>
+ul {
+  display: block !important;
+}
+.reveal img {
+  border: 0.5px !important;
+  border-radius: 2px 10px 2px;
+  padding: 4px;
+}
+.definition,.theorem,.activity {
+  border-width: 0.5px;
+  border-style: solid;
+  border-radius: 2px 10px 2px;
+  padding: 1%;
+  margin-bottom: 2em;
+}
+.definition {
+  background: #00608010;
+}
+.theorem {
+  background: #ff000010;
+}
+.proof {
+  background: #ffffff90;
+}
+.activity {
+  background: #60800010;
+}
+dfn {
+  font-weight: bold;
+}
+.pretext-content ol.no-marker,
+.pretext-content ul.no-marker,
+.pretext-content li.no-marker {
+    list-style-type: none;
+}
+
+.pretext-content ol.decimal {
+    list-style-type: decimal;
+}
+.pretext-content ol.lower-alpha {
+    list-style-type: lower-alpha;
+}
+.pretext-content ol.upper-alpha {
+    list-style-type: upper-alpha;
+}
+.pretext-content ol.lower-roman {
+    list-style-type: lower-roman;
+}
+.pretext-content ol.upper-roman {
+    list-style-type: upper-roman;
+}
+.pretext-content ul.disc {
+    list-style-type: disc;
+}
+.pretext-content ul.square {
+    list-style-type: square;
+}
+.pretext-content ul.circle {
+    list-style-type: circle;
+}
+.pretext-content ol.no-marker,
+.pretext-content ul.no-marker {
+    list-style-type: none;
+}
+.pretext-content .cols1 li,
+.pretext-content .cols2 li,
+.pretext-content .cols3 li,
+.pretext-content .cols4 li,
+.pretext-content .cols5 li,
+.pretext-content .cols6 li {
+    float: left;
+    padding-right:2em;
+}
+          </style>
+</head>
+<body><div class="reveal pretext-content">
+<div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</span></div>
+<div class="slides">
+<section><section><h1>What's New in PreTeXt?</h1>
+<h2>FYMSiC online conference</h2>
+<table>
+<tr><th align="center" style="border-bottom: 0px;">Sean Fitzpatrick</th></tr>
+<tr><td align="center" style="border-bottom: 0px;">University of Lethbridge</td></tr>
+<tr><td align="center"><img src="fiatlux.jpg"></td></tr>
+</table>
+<h4><div class="date">May 4th, 2022</div></h4></section></section><section><section><h1>What <em class="emphasis">is</em> PreTeXt?</h1></section><section><h3>The basics</h3>
+<div align="left"> <p>PreTeXt is an <abbr class="initialism">XML</abbr> vocabulary for authoring scholarly works, along processing tools.</p> <p>Currently supported formats include:<ol class="decimal">
+<li><p><abbr class="initialism">HTML</abbr> (fully supported)</p></li>
+<li><p><abbr class="initialism">PDF</abbr>, via <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> (fully supported)</p></li>
+<li><p><abbr class="initialism">EPUB</abbr> (supported, with some effort)</p></li>
+<li><p>Jupyter (works, with quirks)</p></li>
+<li><p>Braille (supported, I think — haven't tried it)</p></li>
+<li><p>Runestone</p></li>
+<li><p>Slides (like these ones!)</p></li>
+</ol></p>
+</div></section><section><h3>Processing</h3>
+<div align="left"> <p>Processing of the <abbr class="initialism">XML</abbr> source uses <abbr class="initialism">XSLT</abbr> style sheet transforms.</p> <p>Traditionally, this involved the use of a program called <code class="code-inline tex2jax_ignore">xsltproc</code>, along with a number of auxilliary programs to handle images and other components.</p> <p>OK if you use Linux, but intimidating to the new user. Commands could get complicated. Most people relied on Bash scripts or makefiles.</p> <p>Oh, and getting everything working on Windows was a <em class="alert">nightmare</em>.</p>
+</div></section><section><h3>Why use it?</h3>
+<div align="left"> <p>The motto: “Write once, read anywhere.”<ul class="disc">
+<li><p>Variety of formats makes books more portable and accessible.</p></li>
+<li><p>Speaking of accessibility: the <abbr class="initialism">HTML</abbr> works with screen readers and other accessibility tools.</p></li>
+<li><p>Interactive elements, like video, 3D Asymptote, GeoGebra, Desmos, Sage Cell, and WeBWorK exercises, are all supported.</p></li>
+<li><p>You'll be part of an awesome, supportive community of educators.</p></li>
+</ul></p>
+</div></section><section><h3>So, what's new?</h3>
+<div align="left"> <p>As the user base has grown, so has the need to make things more user-friendly. New tools include:<ul class="disc">
+<li><p>Authoring tools: syntax highlighting and tag completion</p></li>
+<li><p>Processing tools: the “PreTeXt-CLI” (command-line interface), a Python package that automates a lot of the work involved in building your book.</p></li>
+<li><p>Publishing tools: don't have a webserver to host your book? PreTeXt can now automatically publish your book to a <em class="emphasis">GitHub Pages</em> site.</p></li>
+</ul></p>
+</div></section></section><section><section><h1>Authoring</h1></section><section><h3>The PreTeXt language</h3>
+<div align="left"> <p>PreTeXt uses <abbr class="initialism">XML</abbr>, which will be new to many authors. If you've used <abbr class="initialism">HTML</abbr> and <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> before, the learning curve isn't too steep.</p> <p><ul id="p-24" class="disc">
+<li><p><abbr class="initialism">XML</abbr> is used to handle <em class="emphasis">structure</em>: sections, definitions, theorems, examples, etc..</p></li>
+<li><p>Anything that happens in a math environment is standard <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span>.</p></li>
+<li><p>Forgotten closing tags become the new forgotten closing brace. (But they're easier to track down!)</p></li>
+</ul></p>
+</div></section><section><h3>Editor tools</h3>
+<div align="left"> <p>Three modern text editors have access to an add-on package that adds support for PreTeXt: Sublime Text, Atom, and VSCode.</p> <p>PreTeXt support includes syntax highlighting and tag completion. Tag completion means you don't have to remember exactly what all the tags are. Not sure how to format a theorem? Type <code class="code-inline tex2jax_ignore">thm</code>, hit tab, and out comes:<pre class="code-display tex2jax_ignore">&lt;theorem xml:id="thm-"&gt;
+  &lt;statement&gt;
+    &lt;p&gt;
+
+    &lt;/p&gt;
+  &lt;/statement&gt;
+&lt;/theorem&gt;
+</pre></p>
+</div></section><section><h3>Support</h3>
+<div align="left"> <p>The <a class="external" href="https://pretextbook.org/doc/guide/html/guide-toc.html" target="_blank">PreTeXt Guide</a> has instructions for all commonly-encountered scenarios.</p> <p>When you're stuck, the <a class="external" href="https://groups.google.com/forum/#!forum/pretext-support" target="_blank">pretext-support</a> Google group is almost always quick to respond, and helpful.</p> <p>You can also follow the #PreTeXtGang on Twitter.</p>
+</div></section></section><section><section><h1>Processing</h1></section><section><h3>Prerequisites</h3>
+<div align="left"> <p>To get started, your computer will have to have the following:<ol class="decimal">
+<li><p>A Python installation, at version 3.9 or newer. When installing on Windows, be sure to add it to the PATH.</p></li>
+<li><p>A working <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> distribution, if you want to be able to produce PDF.</p></li>
+<li><p>If you have images written using TikZ code, you need a helper application called <code class="code-inline tex2jax_ignore">pdf2svg</code>.</p></li>
+<li><p>Other features might require additional software (like Sage).</p></li>
+<li><p>You'll need a command prompt. On Windows, PowerShell will do, but most people prefer Git Bash.</p></li>
+</ol></p>
+</div></section><section><h3>Installing PreTeXt</h3>
+<div align="left"> <p>In a terminal, type:<pre class="code-display tex2jax_ignore">pip install pretextbook</pre>Now wait about 30 seconds.</p> <p>That's it!</p>
+</div></section><section><h3>Using the PreTeXt-CLI</h3>
+<div align="left"> <p>There are a few commands you need to build your PreTeXt book. When you're starting out, you should just need the basic commands. As you add more features to your book, you might need to modify things a bit.</p> <p><ul id="p-42" class="disc">
+<li>
+<p><code class="code-inline tex2jax_ignore">pretext new book</code></p>
+<p>Automatically generate a directory with the expected structure.</p>
+</li>
+<li>
+<p><code class="code-inline tex2jax_ignore">pretext build html</code></p>
+<p>Build the <abbr class="initialism">HTML</abbr> version of your book. (If you have diagrams that need to be built, <code class="code-inline tex2jax_ignore">pretext build html -d</code>.)</p>
+</li>
+<li>
+<p><code class="code-inline tex2jax_ignore">pretext build pdf</code> or <code class="code-inline tex2jax_ignore">pretext build latex</code></p>
+<p>Builds <abbr class="initialism">PDF</abbr> directly, or the <span class="latex-logo">L<span class="A">a</span>T<span class="E">e</span>X</span> file if you need it.</p>
+</li>
+<li>
+<p><code class="code-inline tex2jax_ignore">pretext view html</code></p>
+<p>Open your <abbr class="initialism">HTML</abbr> textbook on a local webserver.</p>
+</li>
+</ul></p>
+</div></section></section><section><section><h1>Publishing</h1></section><section><h3>DIY</h3>
+<div align="left"> <p>When the only version of our book is <abbr class="initialism">PDF</abbr>, publishing isn't a big deal. Put the file on your <abbr class="initialism">LMS</abbr>, and email a copy to your bookstore for print on demand.</p> <p>But now you want to host <abbr class="initialism">HTML</abbr>. If you (or your department) maintains a webserver, and you can add whatever you want, great! Use that.</p> <p>If not...</p>
+</div></section><section><h3>GitHub</h3>
+<div align="left"> <p>Additional prerequisites:<ul class="disc">
+<li><p>A GitHub account</p></li>
+<li><p>Software for using git.</p></li>
+<li><p>An SSH key.</p></li>
+</ul></p> <p>If your PreTeXt source is on GitHub, the PreTeXt-CLI now has a <code class="code-inline tex2jax_ignore">pretext deploy</code> command.</p> <p>This automatically creates a folder with your <abbr class="initialism">HTML</abbr>, and pushes it to GitHub.</p> <p>On GitHub, you can select that folder in your “GitHub Pages” settings, and <em class="emphasis">voilà</em>! Your book is published.</p>
+</div></section></section><section><section><h1>PreTeXt-adjacent cool things</h1></section><section><h3>Runestone Academy</h3>
+<div align="left"> <p><a class="external" href="https://runestone.academy/" target="_blank">Runestone Academy</a> is a site for open source, interactive textbooks, primarily for computer science.</p> <p>The Runestone Interactive software can be run on a local server, or books can be hosted on the Runestone Academy website.</p>
+</div></section><section><h3>PreTeXt in Runestone</h3>
+<div align="left"> <p>There is a “publisher option” that results in <abbr class="initialism">HTML</abbr> output compatible with Runestone Academy.</p> <p>You can choose to have your book hosted there, or on a Runestone server you run yourself.</p> <p>Once your book is on Runestone, students can log into it. This allows them to highlight and annotate.</p> <p>More importantly, it lets them complete problems <em class="emphasis">in the book</em> and have their progress saved. Scores can be downloaded by the instructor.</p>
+</div></section><section><h3>Runestone in PreTeXt</h3>
+<div align="left"> <p>A recent development has freed some of the Runestone interactive elements from the Runestone infrastructure, allowing them to be used in a PreTeXt book.</p> <p>This includes interactive exercises such as Parson's problems, and live coding.</p> <p>This is still a work in progress. For a sample of current experiments, see the <a class="external" href="https://pretextbook.org/examples/runestone/html/frontmatter.html" target="_blank">Sample Runestone Book</a> on the <a class="external" href="https://pretextbook.org" target="_blank">PreTeXt website</a>.</p>
+</div></section><section><h3>CheckIt</h3>
+<div align="left"> <p>Steven Clontz has written a web application called <a class="external" href="https://checkit.clontz.org/" target="_blank">CheckIt</a>.</p> <p>CheckIt uses PreTeXt as an element for algorithmically generating homework problems. The app is written with standards-based grading in mind: instructors can quickly and easily generate many versions of an assessment, with each problem tied to a particular “standard” or learning outcome.</p>
+</div></section></section>
+</div>
+</div></body>
+<script>
+Reveal.initialize({
+  controls: true,
+  controlsTutorial: true,
+  controlsLayout: 'bottom-right',
+  controlsBackArrows: 'faded',
+  navigationMode: 'default',
+  progress: false,
+  center: false,
+  hash: true,
+  transition: 'fade',
+  width: "100%",
+  height: "100%",
+  margin: "0.025",
+  math: {
+    mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+    config: 'TeX-AMS_HTML-full',
+    // other options are passed into MathJax.Hub.Config()
+    tex2jax: {
+      inlineMath:  [['\\(','\\)']],
+      displayMath: [],
+    }
+  },
+  plugins: [ RevealMath ]
+});
+</script>
+</html>
