@@ -142,27 +142,27 @@
           <ol pause="yes">
             <li>
               <p>
-                <url href="https://uleth.syzygy.ca" visual="uleth.syzygy.ca">Syzygy</url>,
-                a Jupyter hub service provided by <url href="https://www.pims.math.ca/scientific/syzygy" visual="www.pims.math.ca">PIMS</url>.
+                <url href="https://uleth.syzygy.ca" visual="">Syzygy</url>,
+                a Jupyter hub service provided by <url href="https://www.pims.math.ca/scientific/syzygy" visual="">PIMS</url>.
               </p>
             </li>
 
             <li>
               <p>
-                The <url href="https://sagecell.sagemath.org/" visual="sagecell.sagemath.org">SageMathCell</url>.
+                The <url href="https://sagecell.sagemath.org/" visual="">SageMathCell</url>.
               </p>
             </li>
 
             <li>
               <p>
-                <url href="https://opentext.uleth.ca/Math3410/" visual="opentext.uleth.ca/Math3410">Textbooks</url>
-                written in <url href="https://pretextbook.org" visual="pretextbook.org"><pretext /></url>
+                <url href="https://opentext.uleth.ca/Math3410/" visual="">Textbooks</url>
+                written in <url href="https://pretextbook.org" visual=""><pretext /></url>
               </p>
             </li>
 
             <li>
               <p>
-                Coming soon: <url href="https://runestone.academy/" visual="runestone.academy">Runestone</url>.
+                Coming soon: <url href="https://runestone.academy/" visual="">Runestone</url>.
               </p>
             </li>
           </ol>
@@ -187,7 +187,7 @@
         </p>
 
         <p>
-          The <url href="https://github.com/patrickwalls/mathematical-python" visual="github.com/patrickwalls/mathematical-python">resources</url>
+          The <url href="https://github.com/patrickwalls/mathematical-python" visual="">resources</url>
           maintained by Patrick Walls are a godsend.
         </p>
       </slide>
@@ -242,7 +242,7 @@
         </sage>
 
         <p>
-          We make frequent use of the <url href="https://sagecell.sagemath.org/" visual="sagecell.sagemath.org">SageMathCell</url> website,
+          We make frequent use of the <url href="https://sagecell.sagemath.org/" visual="">SageMathCell</url> website,
           including for final exams.
         </p>
       </slide>
@@ -259,7 +259,7 @@
         </p>
 
         <p>
-          Worksheets can be distributed using <url href="https://uleth.syzygy.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fsean-fitzpatrick%2Fcms-summer-2022&amp;urlpath=tree%2Fcms-summer-2022%2Fworksheets%2Fworksheet-svd.ipynb&amp;branch=main">nbgitpuller links</url>.
+          Worksheets can be distributed using <url href="https://uleth.syzygy.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fsean-fitzpatrick%2Fcms-summer-2022&amp;urlpath=tree%2Fcms-summer-2022%2Fworksheets%2Fworksheet-svd.ipynb&amp;branch=main" visual="">nbgitpuller links</url>.
           Students can download as PDF to submit.
         </p>
       </slide>
@@ -284,7 +284,7 @@
 
         <subslide>
           <p>
-            Soon, <pretext /> books will run on <url href="https://pretextbook.org/examples/sample-book/noparts/html/rune.html">Runestone</url>,
+            Soon, <pretext /> books will run on <url href="https://pretextbook.org/examples/sample-book/noparts/html/rune.html" visual="">Runestone</url>,
             allowing for a variety of interactive exercises and other programming languages.
           </p>
         </subslide>
@@ -308,27 +308,27 @@
           <ul pause="yes">
             <li>
               <p>
-                <url href="https://uleth.syzygy.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fsean-fitzpatrick%2Fcms-summer-2022&amp;urlpath=tree%2Fcms-summer-2022%2Fworksheets%2Fnumpy-integration-example.ipynb&amp;branch=main">Numerical integration</url>
+                <url href="https://uleth.syzygy.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fsean-fitzpatrick%2Fcms-summer-2022&amp;urlpath=tree%2Fcms-summer-2022%2Fworksheets%2Fnumpy-integration-example.ipynb&amp;branch=main" visual="">Numerical integration</url>
               </p>
             </li>
             <li>
               <p>
-                <url href="https://uleth.syzygy.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fsean-fitzpatrick%2Fcms-summer-2022&amp;urlpath=tree%2Fcms-summer-2022%2Fworksheets%2FAssignment3sol.ipynb&amp;branch=main">Numerical and graphical methods for ODEs</url>
+                <url href="https://uleth.syzygy.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fsean-fitzpatrick%2Fcms-summer-2022&amp;urlpath=tree%2Fcms-summer-2022%2Fworksheets%2FAssignment3sol.ipynb&amp;branch=main" visual="">Numerical and graphical methods for ODEs</url>
               </p>
             </li>
             <li>
               <p>
-                <url href="https://uleth.syzygy.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fsean-fitzpatrick%2Fcms-summer-2022&amp;urlpath=tree%2Fcms-summer-2022%2Fworksheets%2FAssignment1.ipynb&amp;branch=main">Partial fractions</url>
+                <url href="https://uleth.syzygy.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fsean-fitzpatrick%2Fcms-summer-2022&amp;urlpath=tree%2Fcms-summer-2022%2Fworksheets%2FAssignment1.ipynb&amp;branch=main" visual="">Partial fractions</url>
               </p>
             </li>
             <li>
               <p>
-                <url href="https://opentext.uleth.ca/Math3410/section-matrix-factor.html">Pretty much any kind of matrix factorization</url>
+                <url href="https://opentext.uleth.ca/Math3410/section-matrix-factor.html" visual="">Pretty much any kind of matrix factorization</url>
               </p>
             </li>
             <li>
               <p>
-                <url href="https://opentext.uleth.ca/Math3410/sec-ortho-projection.html#p-463">Gram-freaking-Schmidt</url>
+                <url href="https://opentext.uleth.ca/Math3410/sec-ortho-projection.html#p-463" visual="">Gram-freaking-Schmidt</url>
               </p>
             </li>
           </ul>
