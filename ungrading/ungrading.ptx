@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pretext>
+  <!-- <docinfo>
+    <macros>
+
+    </macros>
+  </docinfo> -->
+  <slideshow>
+    <title>Adventures in Alternative Assessment</title>
+    <subtitle>A review of non-expert attempts to liberate my gradebook</subtitle>
+    <frontmatter>
+      <titlepage>
+        <author>
+          <personname>Sean Fitzpatrick</personname>
+          <affiliation>University of Lethbridge</affiliation>
+          <logo><image source="fiatlux.jpg"/></logo>
+        </author>
+
+        <date>June 5th, 2022</date>
+      </titlepage>
+    </frontmatter>
+
+
+    <section>
+      <title>Initial baby-steps: tutorials</title>
+
+      <slide>
+        <title>The passive tutorial</title>
+        <p>
+          <ul pause="yes">
+            <li>
+              <p>
+                Intended primarily as homework help
+              </p>
+            </li>
+            <li>
+              <p>
+                Students ask questions, instructor solves them
+              </p>
+            </li>
+            <li>
+              <p>
+                Mostly benefits those doing well already
+              </p>
+            </li>
+            <li>
+              <p>
+                Attendance optional (and low)
+              </p>
+            </li>
+          </ul>
+        </p>
+      </slide>
+
+      <slide>
+        <title>The active tutorial</title>
+        <p>
+          <ul pause="yes">
+            <li>
+              <p>
+                Students receive a worksheet
+              </p>
+            </li>
+            <li>
+              <p>
+                Group work is encouraged
+              </p>
+            </li>
+            <li>
+              <p>
+                Instructor provides assistance to students
+              </p>
+            </li>
+            <li>
+              <p>
+                <q>Lecturing</q> limited to introduction or common difficulty
+              </p>
+            </li>
+            <li>
+              <p>
+                Work graded for <em>feedback</em>
+              </p>
+            </li>
+            <li>
+              <p>
+                Resubmission permitted
+              </p>
+            </li>
+          </ul>
+        </p>
+      </slide>
+    </section>
+
+    <section>
+      <title>Standards-Based Grading, part 1</title>
+
+      <slide>
+        <title>The catalysts</title>
+        <p>
+          <ol pause="yes">
+            <li>
+              <p>
+                A <q>Curated Courses</q> workshop (<pretext />-based) in Austin, TX
+              </p>
+
+              <p>
+                Steven Clontz presented on using SBG
+              </p>
+            </li>
+
+            <li>
+              <p>
+                The <url href="https://callysto.ca" visual="">Callysto</url> project
+              </p>
+
+              <p>
+                I was the Lethbridge site director for Phase 1
+              </p>
+
+              <p>
+                This was supposed to come with a teaching buyout; I got TA money instead
+              </p>
+            </li>
+          </ol>
+        </p>
+      </slide>
+
+      <slide>
+        <title>SBG for Calculus 1</title>
+        <p>
+          I took the plunge for <url href="https://www.cs.uleth.ca/~fitzpat/syllabus/Fall2018/Math1560/section-standards.html" visual="">Math 1560</url>.
+        </p>
+
+        <p>
+          This was not 100% SBG. <q>In-class exercises</q> were 30% of the grade.
+        </p>
+
+        <p>
+          I kept tests, and online homework.
+        </p>
+      </slide>
+
+      <slide>
+        <title>The good</title>
+        <p>
+          <ul pause="yes">
+            <li>
+              <p>
+                Crowdmark submission and a good TA meant students got feedback within 24 hours
+              </p>
+            </li>
+            <li>
+              <p>
+                The (points-based) grades went up
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Biggest change was the final: average and median both +12%
+              </p>
+            </li>
+
+            <li>
+              <p>
+                More students earned A grades, despite higher cut-offs
+              </p>
+            </li>
+          </ul>
+        </p>
+      </slide>
+
+      <slide>
+        <title>The bad</title>
+
+        <p>
+          <ul pause="yes">
+            <li>
+              <p>
+                I spent <em>way</em> to much time explaining our system
+              </p>
+            </li>
+            <li>
+              <p>
+                Neither Crowdmark nor our LMS were really set up to handle resubmission
+              </p>
+            </li>
+            <li>
+              <p>
+                Some students kept trying to turn it into homework
+              </p>
+            </li>
+            <li>
+              <p>
+                The percentage of students failing did not improve
+              </p>
+            </li>
+          </ul>
+        </p>
+
+        <subslide>
+          <p>
+            And the ugly: did I mention this was a class of 240?
+          </p>
+
+          <p>
+            Even with support, this was way too much work.
+          </p>
+        </subslide>
+      </slide>
+    </section>
+
+    <section>
+      <title>Strictly cumulative grading</title>
+
+      <slide>
+        <title>My introduction</title>
+
+        <p>
+          In Fall 2018, our Teaching Centre sent a group (including me!)
+          to the MRU iSoTL Symposium in Banff.
+        </p>
+
+        <subslide>
+          <p>
+            One of the talks was by Katrin Becker (MRU) on <q>strictly cumulative grading</q>.
+          </p>
+        </subslide>
+
+        <subslide>
+          <p>
+            This is a system where:
+            <ul pause="yes">
+              <li>
+                <p>
+                  Students start the year at zero
+                </p>
+              </li>
+              <li>
+                <p>
+                  Everything earns points
+                </p>
+              </li>
+              <li>
+                <p>
+                  All that matters is the total, not where the points come from
+                </p>
+              </li>
+            </ul>
+          </p>
+        </subslide>
+      </slide>
+
+      <slide>
+        <title>My implementation</title>
+        <p>
+          I decided to try this for <url href="https://www.cs.uleth.ca/~fitzpat/syllabus/Spring2019/Math2090/index.html" visual="">Math 2090</url>,
+          a course intended primarily for future elementary school teachers.
+        </p>
+
+        <p>
+          First time was a very last-minute assignment.
+          I appreciated the flexibility this system allowed me.
+        </p>
+
+        <p>
+          Course included:
+          <ul>
+            <li>Quizzes</li>
+            <li>Assignments</li>
+            <li>Presentations</li>
+            <li>Forum Discussion</li>
+            <li>A Curriculum project</li>
+            <li>A Final Exam</li>
+          </ul>
+        </p>
+      </slide>
+
+      <slide>
+        <title>The Good</title>
+        <p>
+          <ul pause="yes">
+            <li>
+              <p>
+                Fantastic for encouraging discussion, especially on forums
+              </p>
+            </li>
+            <li>
+              <p>
+                Encouraged collaboration and creativity
+              </p>
+            </li>
+            <li>
+              <p>
+                Allowed us to have <em>fun</em>
+              </p>
+            </li>
+            <li>
+              <p>
+                Most students did very well
+              </p>
+            </li>
+            <li>
+              <p>
+                Students had agency and flexibility
+              </p>
+            </li>
+          </ul>
+        </p>
+      </slide>
+
+      <slide>
+        <title>The Bad</title>
+
+        <p>
+          <ul>
+            <li>
+              <p>
+                Not that much, to be honest
+              </p>
+            </li>
+            <li>
+              <p>
+                High-performing students were able to finish early, and stopped attending
+              </p>
+            </li>
+            <li>
+              <p>
+                Unsure how to translate to <q>traditional</q> math classes
+              </p>
+            </li>
+          </ul>
+        </p>
+      </slide>
+    </section>
+
+    <section>
+      <title>Standards-based grading, part 2</title>
+
+      <slide>
+        <title>A small class, at last</title>
+        <p>
+          Last fall, I brought <q>grading for growth</q> to <url href="https://www.cs.uleth.ca/~fitzpat/syllabus/Fall2021/Math2575/" visual="">Math 2575</url>.
+          There were fewer than 10 students in the class!
+        </p>
+
+        <subslide>
+          <p>
+            Students were asked for input on course design. They wanted:
+            <ul pause="yes">
+              <li>
+                <p>
+                  Online homework
+                </p>
+              </li>
+              <li>
+                <p>
+                  A project
+                </p>
+              </li>
+              <li>
+                <p>
+                  No tests (once they learned that was an option)
+                </p>
+              </li>
+            </ul>
+          </p>
+        </subslide>
+
+        <subslide>
+          <p>
+            Majority of grade determined by standards-aligned assignments,
+            with unlimited revision.
+          </p>
+        </subslide>
+      </slide>
+
+      <slide>
+        <title>Results</title>
+        <p>
+          Success! But this was a small group of strong students.
+        </p>
+
+        <p pause="yes">
+          Revisions let us focus on writing quality as well.
+        </p>
+
+        <p pause="yes">
+          It also meant challenging problems weren't an issue.
+        </p>
+
+        <p pause="yes">
+          Question: how to balance individual standards assessment
+          with the desire for collaboration
+        </p>
+      </slide>
+    </section>
+
+    <section>
+      <title>Where am I at now?</title>
+
+      <slide>
+        <title>Why am I not ungrading?</title>
+        <p>
+          I know better, so why do I still use points?
+          <ol pause="yes">
+            <li>
+              <p>
+                Class size: often 100+
+              </p>
+            </li>
+            <li>
+              <p>
+                Grading resources: disappearing
+              </p>
+            </li>
+            <li>
+              <p>
+                Institutional inertia:
+                <ul>
+                  <li>
+                    <p>
+                      Coordination across sections
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Student expectations
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Sadly, lowering pressure can backfire
+                    </p>
+                  </li>
+                </ul>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </slide>
+
+      <slide>
+        <title>How do I make up for it?</title>
+        <p>
+          Can I keep points-based grading in large classes (for logistical reasons)
+          but make it less unfair and more focused on learning?
+        </p>
+
+        <p>
+          Here's what I used last semester.
+          <ol pause="yes">
+            <li>
+              <p>
+                Assignments: time during class, groups encouraged
+              </p>
+            </li>
+            <li>
+              <p>
+                Tests: two-stage, when possible
+              </p>
+            </li>
+            <li>
+              <p>
+                Final exam: why?
+              </p>
+            </li>
+            <li>
+              <p>
+                Revisions: only once, but on almost everything
+              </p>
+            </li>
+            <li>
+              <p>
+                Extensions: almost always
+              </p>
+            </li>
+          </ol>
+        </p>
+      </slide>
+
+      <slide>
+        <title>Questions (from me, for you!)</title>
+        <p>
+          <ul>
+            <li>
+              <p>
+                Can we ungrade efficiently? (Think: 1 instructor, 200 students, no TAs)
+              </p>
+            </li>
+            <li>
+              <p>
+                Is it fair to grade for completion? (<eg/> exam wrappers)
+              </p>
+            </li>
+            <li>
+              <p>
+                In any system, how do we mitigate the <q>cutoff dilemma</q>?
+              </p>
+            </li>
+          </ul>
+        </p>
+      </slide>
+    </section>
+  </slideshow>
+</pretext>
