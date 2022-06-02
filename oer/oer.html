@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2022-06-02T15:46:25-06:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>OER, PreTeXt, and Scholarship</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/reset.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/reveal.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/theme/league.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/reveal.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.2/plugin/math/math.js"></script><style>
+ul {
+  display: block !important;
+}
+.reveal img {
+  border: 0.5px !important;
+  border-radius: 2px 10px 2px;
+  padding: 4px;
+}
+.definition,.theorem,.activity {
+  border-width: 0.5px;
+  border-style: solid;
+  border-radius: 2px 10px 2px;
+  padding: 1%;
+  margin-bottom: 2em;
+}
+.definition {
+  background: #00608010;
+}
+.theorem {
+  background: #ff000010;
+}
+.proof {
+  background: #ffffff90;
+}
+.activity {
+  background: #60800010;
+}
+dfn {
+  font-weight: bold;
+}
+.pretext-content ol.no-marker,
+.pretext-content ul.no-marker,
+.pretext-content li.no-marker {
+    list-style-type: none;
+}
+
+.pretext-content ol.decimal {
+    list-style-type: decimal;
+}
+.pretext-content ol.lower-alpha {
+    list-style-type: lower-alpha;
+}
+.pretext-content ol.upper-alpha {
+    list-style-type: upper-alpha;
+}
+.pretext-content ol.lower-roman {
+    list-style-type: lower-roman;
+}
+.pretext-content ol.upper-roman {
+    list-style-type: upper-roman;
+}
+.pretext-content ul.disc {
+    list-style-type: disc;
+}
+.pretext-content ul.square {
+    list-style-type: square;
+}
+.pretext-content ul.circle {
+    list-style-type: circle;
+}
+.pretext-content ol.no-marker,
+.pretext-content ul.no-marker {
+    list-style-type: none;
+}
+.pretext-content .cols1 li,
+.pretext-content .cols2 li,
+.pretext-content .cols3 li,
+.pretext-content .cols4 li,
+.pretext-content .cols5 li,
+.pretext-content .cols6 li {
+    float: left;
+    padding-right:2em;
+}
+          </style>
+</head>
+<body><div class="reveal pretext-content">
+<div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</span></div>
+<div class="slides">
+<section><section><h1>OER, PreTeXt, and Scholarship</h1>
+<h2>To OER or not to OER, CMS Summer 2022</h2>
+<table>
+<tr><th align="center" style="border-bottom: 0px;">Sean Fitzpatrick</th></tr>
+<tr><td align="center" style="border-bottom: 0px;">University of Lethbridge</td></tr>
+<tr><td align="center"><img src="fiatlux.jpg"></td></tr>
+</table>
+<h4><div class="date">June 4th, 2022</div></h4></section></section><section><section><h1>Why OER?</h1></section><section><h3>Cost</h3>
+<div align="left"> <p>This is the most visible aspect of OER: it tends to be free.</p> <p>Cost is not unimportant: many students struggle to afford course materials.</p> <p>But it's not all (or we wouldn't be here)</p>
+</div></section><section><h3>Flexibility</h3>
+<div align="left"> <p>Instructors have freedom to edit, adapt, and combine OER.</p> <p><ul id="p-5" class="disc">
+<li class="fragment"><p>Add a chapter to a book that almost fits</p></li>
+<li class="fragment"><p>Canadianize the spelling!</p></li>
+<li class="fragment"><p>Reorganize the contents</p></li>
+<li class="fragment"><p>Fix typos</p></li>
+<li class="fragment"><p>Change a definition</p></li>
+</ul></p>
+</div></section><section><h3>Access</h3>
+<div align="left"> <p>Remember Fall 2020?</p> <p class="fragment">Did your students get their books on time?</p> <p><ul id="p-13" class="disc">
+<li class="fragment"><p>Mine did. Early, in fact.</p></li>
+<li class="fragment"><p>OER tends to be online. Why not?</p></li>
+<li class="fragment"><p>Licensing allows students to print as needed</p></li>
+<li class="fragment"><p>There are no access codes or crappy online viewers</p></li>
+</ul></p>
+</div></section><section><h3>Quality</h3>
+<div align="left"> <p>OER is free, but it's not very good, right?</p> <p class="fragment">(At least, according to the publisher reps)</p> <p class="fragment">This was true 10 years ago. It's not true any more.</p> <p class="fragment">Where OER still falls short, it is due to lack of people-hours to work on content.</p>
+</div></section></section><section><section><h1>PreTeXt</h1></section><section><h3>PreTeXt</h3>
+<div align="left"> <p>PreTeXt is an XML vocabulary and toolchain for authoring open textbooks.</p> <p class="fragment">From common source, PreTeXt can generate HTML, PDF, EPUB, Jupyter, and Braille.</p> <p class="fragment">PreTeXt HTML boasts features such as interactive graphics and exercises, live code cells, video, and a portable interface that works well on mobile devices.</p>
+</div></section><section><h3>Runestone</h3>
+<div align="left"> <p><a class="external" href="https://runestone.academy/" target="_blank">Runestone Academy</a> is a website that provides free, interactive textbooks, mostly in computer science.</p> <p>The next step for PreTeXt is integration with <a class="external" href="https://pretextbook.org/examples/sample-book/noparts/html/rune.html" target="_blank">Runestone</a>.</p> <p>A PreTeXt book running on Runestone will allow students to log in, and complete homework, take notes, answer reading questions, etc.</p>
+</div></section></section><section><section><h1>UTMOST</h1></section><section><h3>UTMOST, v1</h3>
+<div align="left"> <p><a class="external" href="https://utmost.aimath.org/" target="_blank">UTMOST</a> stands for Undergraduate Teaching in Mathematics with Open Software and Textbooks.</p> <p>First NSF grant funded development of SageMathCell and CoCalc, and the <a class="external" href="https://aimath.org/textbooks/approved-textbooks/" target="_blank">Open Textbook Initiative</a>.</p> <p>Subsequent NSF grants have funded PreTeXt, and total several million dollars.</p> <div class="fragment"><div style="display:table;margin-left:40%;margin-right:40%;"><div style="display:table-cell;width:250%;vertical-align:top;"><img src="jealous.gif"></div></div></div>
+</div></section><section><h3>UTMOST, v2</h3>
+<div align="left"> <p>Most recent grant used to fund PreTeXt development, including several AIM workshops.</p> <p class="fragment">One major advancement has been the development of <a class="external" href="https://aimath.org/aimnews/braille_full/" target="_blank">Braille</a> output.</p> <p class="fragment">Previous work used analytics (built into the book) to study how students used their textbooks.</p> <p class="fragment">Research by Vilma Mesa (University of Michigan) generated <a class="external" href="https://revistas.ucr.ac.cr/index.php/cifem/article/download/39908/40451/" target="_blank">heat maps</a> to show how students used their books.</p>
+</div></section></section><section><section><h1>Scholarship</h1></section><section><h3>My experience</h3>
+<div align="left"> <p>I do not hold a multi-million dollar NSF grant.</p> <div class="fragment"><div style="display:table;margin-left:40%;margin-right:40%;"><div style="display:table-cell;width:250%;vertical-align:top;"><img src="shocked.gif"></div></div></div> <div class="fragment">
+<p>But OER has been my gateway into the scholarship of teaching and learning.</p> <p><ul id="p-37" class="disc">
+<li class="fragment"><p>U of L Teaching Fellowship</p></li>
+<li class="fragment"><p>The #PreTeXtGang</p></li>
+<li class="fragment"><p>FYMSiC</p></li>
+<li class="fragment"><p>CMS</p></li>
+</ul></p>
+</div>
+</div></section><section><h3>Recognition and Funding</h3>
+<div align="left"> <p>Who funds OER in Canada? (Not NSERC)</p> <p>Is it recognized as scholarship?</p> <p>Can you even put it on your professional activities report?</p> <div class="fragment">
+<p>Using OER makes us better teachers, and it reduces stress for students.</p> <p>OER can be better than commercial. In some cases, it already is. The technology is there. What we lack are (human) resources.</p> <p>Support for OER is support for students. We need more of it.</p>
+</div>
+</div></section></section>
+</div>
+</div></body>
+<script>
+Reveal.initialize({
+  controls: true,
+  controlsTutorial: true,
+  controlsLayout: 'bottom-right',
+  controlsBackArrows: 'faded',
+  navigationMode: 'default',
+  progress: false,
+  center: false,
+  hash: true,
+  transition: 'fade',
+  width: "100%",
+  height: "100%",
+  margin: "0.025",
+  math: {
+    mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+    config: 'TeX-AMS_HTML-full',
+    // other options are passed into MathJax.Hub.Config()
+    tex2jax: {
+      inlineMath:  [['\\(','\\)']],
+      displayMath: [],
+    }
+  },
+  plugins: [ RevealMath ]
+});
+</script>
+</html>

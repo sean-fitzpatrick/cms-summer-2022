@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pretext>
+  <!-- <docinfo>
+    <macros>
+
+    </macros>
+  </docinfo> -->
+  <slideshow>
+    <title>OER, <pretext />, and Scholarship</title>
+    <subtitle>To OER or not to OER, CMS Summer 2022</subtitle>
+    <frontmatter>
+      <titlepage>
+        <author>
+          <personname>Sean Fitzpatrick</personname>
+          <affiliation>University of Lethbridge</affiliation>
+          <logo><image source="fiatlux.jpg"/></logo>
+        </author>
+
+        <date>June 4th, 2022</date>
+      </titlepage>
+    </frontmatter>
+
+
+    <section>
+      <title>Why OER?</title>
+
+      <slide>
+        <title>Cost</title>
+
+        <p>
+          This is the most visible aspect of OER: it tends to be free.
+        </p>
+
+        <p>
+          Cost is not unimportant: many students struggle to afford course materials.
+        </p>
+
+        <p>
+          But it's not all (or we wouldn't be here)
+        </p>
+      </slide>
+
+      <slide>
+        <title>Flexibility</title>
+        <p>
+          Instructors have freedom to edit, adapt, and combine OER.
+        </p>
+
+        <p>
+          <ul pause="yes">
+            <li>
+              <p>
+                Add a chapter to a book that almost fits
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Canadianize the spelling!
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Reorganize the contents
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Fix typos
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Change a definition
+              </p>
+            </li>
+          </ul>
+        </p>
+      </slide>
+
+      <slide>
+        <title>Access</title>
+
+        <p>
+          Remember Fall 2020?
+        </p>
+
+        <p pause="yes">
+          Did your students get their books on time?
+        </p>
+
+        <p>
+          <ul pause="yes">
+            <li>
+              <p>
+                Mine did. Early, in fact.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                OER tends to be online. Why not?
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Licensing allows students to print as needed
+              </p>
+            </li>
+
+            <li>
+              <p>
+                There are no access codes or crappy online viewers
+              </p>
+            </li>
+          </ul>
+        </p>
+      </slide>
+
+      <slide>
+        <title>Quality</title>
+
+        <p>
+          OER is free, but it's not very good, right?
+        </p>
+
+        <p pause="yes">
+          (At least, according to the publisher reps)
+        </p>
+
+        <p pause="yes">
+          This was true 10 years ago. It's not true any more.
+        </p>
+
+        <p pause="yes">
+          Where OER still falls short, it is due to lack of people-hours to work on content.
+        </p>
+      </slide>
+    </section>
+
+    <section>
+      <title><pretext /></title>
+
+      <slide>
+        <title><pretext /></title>
+
+        <p>
+          <url href="https://pretextbook.org" visual=""><pretext /></url> is an XML vocabulary and toolchain for authoring open textbooks.
+        </p>
+
+        <p pause="yes">
+          From common source, <pretext /> can generate HTML, PDF, EPUB, Jupyter, and Braille.
+        </p>
+
+        <p pause="yes">
+          <pretext /> HTML boasts features such as interactive graphics and exercises,
+          live code cells, video, and a portable interface that works well on mobile devices.
+        </p>
+
+        <p pause="yes">
+          You can also use it to make slides!
+        </p>
+      </slide>
+
+      <slide>
+        <title>Runestone</title>
+
+        <p>
+          <url href="https://runestone.academy/" visual="">Runestone Academy</url>
+          is a website that provides free, interactive textbooks, mostly in computer science.
+        </p>
+
+        <p>
+          The next step for <pretext /> is integration with <url href="https://pretextbook.org/examples/sample-book/noparts/html/rune.html" visual="">Runestone</url>.
+        </p>
+
+        <p>
+          A <pretext /> book running on Runestone will allow students to log in,
+          and complete homework, take notes, answer reading questions, <etc/>
+        </p>
+      </slide>
+    </section>
+
+    <section>
+      <title>UTMOST</title>
+
+      <slide>
+        <title>UTMOST, v1</title>
+
+        <p>
+          <url href="https://utmost.aimath.org/" visual="">UTMOST</url>
+          stands for Undergraduate Teaching in Mathematics with Open Software and Textbooks.
+        </p>
+
+        <p>
+          First NSF grant funded development of SageMathCell and CoCalc,
+          and the <url href="https://aimath.org/textbooks/approved-textbooks/" visual="">Open Textbook Initiative</url>.
+        </p>
+
+        <p>
+          Subsequent NSF grants have funded <pretext />, and total several million dollars.
+        </p>
+
+        <subslide>
+          <sidebyside width="50%" margins="40%">
+            <image width="50%" source="jealous.gif"/>
+          </sidebyside>
+        </subslide>
+      </slide>
+
+      <slide>
+        <title>UTMOST, v2</title>
+        <p>
+          Most recent grant used to fund <pretext /> development,
+          including several AIM workshops.
+        </p>
+
+        <p pause="yes">
+          One major advancement has been the development of <url href="https://aimath.org/aimnews/braille_full/" visual="">Braille</url>
+          output.
+        </p>
+
+        <p pause="yes">
+          Previous work used analytics (built into the book)
+          to study how students used their textbooks.
+        </p>
+
+        <p pause="yes">
+          Research by Vilma Mesa (University of Michigan) generated
+          <url href="https://revistas.ucr.ac.cr/index.php/cifem/article/download/39908/40451/" visual="">heat maps</url>
+          to show how students used their books.
+        </p>
+      </slide>
+    </section>
+
+    <section>
+      <title>Scholarship</title>
+
+      <slide>
+        <title>My experience</title>
+
+        <p>
+          I do not hold a multi-million dollar NSF grant.
+        </p>
+
+        <subslide>
+          <sidebyside width="50%" margins="40%">
+            <image source="shocked.gif"/>
+          </sidebyside>
+        </subslide>
+
+        <subslide>
+          <p>
+            But OER has been my gateway into the scholarship of teaching and learning.
+          </p>
+
+          <p>
+            <ul pause="yes">
+              <li>
+                <p>
+                  U of L Teaching Fellowship
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  The <url href="https://twitter.com/search?q=%23PreTeXtGang&amp;src=typed_query" visual="">#PreTeXtGang</url>
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  FYMSiC
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  CMS
+                </p>
+              </li>
+            </ul>
+          </p>
+        </subslide>
+      </slide>
+
+      <slide>
+        <title>Recognition and Funding</title>
+
+        <p>
+          Who funds OER in Canada? (Not NSERC)
+        </p>
+
+        <p>
+          Is it recognized as scholarship?
+        </p>
+
+        <p>
+          Can you even put it on your professional activities report?
+        </p>
+
+        <subslide>
+          <p>
+            Using OER makes us better teachers, and it reduces stress for students.
+          </p>
+
+          <p>
+            OER can be better than commercial. In some cases, it already is.
+            The technology is there. What we lack are (human) resources.
+          </p>
+
+          <p>
+            Support for OER is support for students. We need more of it.
+          </p>
+        </subslide>
+      </slide>
+    </section>
+
+
+  </slideshow>
+</pretext>
