@@ -380,7 +380,11 @@
           </p>
 
           <sidebyside width="60%" margins="20%">
-            <image source="lovejoy.jpg"/>
+            <image source="lovejoy.jpg">
+              <description>
+                A picture of Helen Lovejoy from the Simpsons, saying "Won't somebody please think of the testing!"
+              </description>
+            </image>
           </sidebyside>
 
           <p>

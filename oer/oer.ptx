@@ -207,7 +207,11 @@
 
         <subslide>
           <sidebyside width="50%" margins="40%">
-            <image width="50%" source="jealous.gif"/>
+            <image width="50%" source="jealous.gif">
+              <description>
+                A humourous GIF featuring Benedict Cumberbach saying "I envy you so much"
+              </description>
+            </image>
           </sidebyside>
         </subslide>
       </slide>
@@ -249,7 +253,11 @@
 
         <subslide>
           <sidebyside width="50%" margins="40%">
-            <image source="shocked.gif"/>
+            <image source="shocked.gif">
+              <description>
+                A humourous GIF featuring David Tennant, as The Doctor, looking surprised, and saying "Really?"
+              </description>
+            </image>
           </sidebyside>
         </subslide>
 
