@@ -186,7 +186,7 @@
     </section>
 
     <section>
-      <title>UTMOST</title>
+      <title>NSF-funded projects</title>
 
       <slide>
         <title>UTMOST, v1</title>
@@ -237,6 +237,24 @@
           Research by Vilma Mesa (University of Michigan) generated
           <url href="https://revistas.ucr.ac.cr/index.php/cifem/article/download/39908/40451/" visual="">heat maps</url>
           to show how students used their books.
+        </p>
+      </slide>
+
+      <slide>
+        <title>TBIL and CheckIt</title>
+        <p>
+          <url href="https://twitter.com/StevenXClontz" visual="">Steven Clontz</url> has written a problem-generation system
+          called <url href="https://checkit.clontz.org/" visual="">CheckIt</url>,
+          designed to generate assessments aligned to standards.
+        </p>
+
+        <p pause="yes">
+          This was a key tool for an NSF-funded project on
+          <url href="https://sites.google.com/southalabama.edu/tbil/tbil-resource-library" visual="">Team-Based Inquiry Learning</url>.
+        </p>
+
+        <p pause="yes">
+          This summer they enter their second year of training instructors and generating content.
         </p>
       </slide>
     </section>
